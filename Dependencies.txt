@@ -1,0 +1,12 @@
+Java Runtime Environment: https://www.java.com/en/download/manual.jsp
+
+
+Gnirehtet Java with the .exe and .apk from the latest build and the other components from the v2.5 Java build: https://github.com/Genymobile/gnirehtet
+
+
+ADB: https://developer.android.com/tools/releases/platform-tools
+
+
+Nullsoft Scriptable Install System: https://nsis.sourceforge.io/Download
+RT-RP.nsi is just the script to compile the installer with NSIS, Make a folder called "Source" on your desktop, this is where the script will grab everything from.
+MAKE SURE TO CHANGE C:\USERS\USER PROFILE\DESKTOP\SOURCE!!!!!
