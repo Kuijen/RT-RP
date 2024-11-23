@@ -14,7 +14,7 @@
 Name "Reverse Tethering RePack Installer"
 
 ; The file to write
-OutFile "C:\Users\$PROFILE\Desktop\RTRP Installer.exe"
+OutFile "C:\Users\USER PROFILE\Desktop\RTRP Installer.exe"
 
 ; Request application privileges for Windows Vista and higher
 RequestExecutionLevel admin
@@ -50,10 +50,10 @@ Section "Java Runtime & Core Files (required)"
   ; Set output path to the installation directory.
   SetOutPath $INSTDIR
   
-  Execwait "C:\Users\KUIJEN\Desktop\Source\Java runtime installer (online).exe"
+  Execwait "C:\Users\USER PROFILE\Desktop\Source\Java runtime installer (online).exe"
 
   ; Put file there
-  File /r "C:\Users\KUIJEN\Desktop\Source\"
+  File /r "C:\Users\USER PROFILE\Desktop\Source\"
   
   ; Write the installation path into the registry
   WriteRegStr HKLM SOFTWARE\RTRP "Install_Dir" "$INSTDIR"
