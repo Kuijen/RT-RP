@@ -14,7 +14,7 @@
 Name "Reverse Tethering RePack Installer"
 
 ; The file to write
-OutFile "C:\Users\KUIJEN\Desktop\hello1\RTRP Installer.exe"
+OutFile "C:\Users\$PROFILE\Desktop\RTRP Installer.exe"
 
 ; Request application privileges for Windows Vista and higher
 RequestExecutionLevel admin
@@ -102,7 +102,7 @@ SectionEnd
 
 Section "Desktop Shortcut" SectionX
     SetShellVarContext current
-    CreateShortCut "$DESKTOP\RT-RP.lnk" "$INSTDIR\START.cmd"
+    CreateShortCut "$DESKTOP\RTRP.lnk" "$INSTDIR\START.cmd"
 
 SectionEnd
 
