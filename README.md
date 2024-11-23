@@ -27,7 +27,7 @@ Launches SteamVR, SlimeVR Server, Amethyst, VRCFT, Virtual Desktop Streamer and 
 
 The only files you actually need are START.cmd and config.txt, everything else comes from the Java version of [Gnirehtet](https://github.com/Genymobile/gnirehtet).<br> Just put the files into the same folder as Gnirehtet and run START.cmd to launch the script.
 
-The [NSIS](https://nsis.sourceforge.io/Main_Page) script is only needed if you want to bundle it into an installer, make sure that you change the user derectory inside the script!
+The [NSIS](https://nsis.sourceforge.io/Main_Page) script is only needed if you want to bundle it into an installer, make sure that you change the user directory inside the script!
 
 
 <h1 style="font-size:300%;"></h1>
