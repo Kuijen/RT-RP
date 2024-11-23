@@ -23,13 +23,10 @@ Launches SteamVR, SlimeVR Server, Amethyst, VRCFT, Virtual Desktop Streamer and 
 
 4. If you have issues with it disconnecting (Client #0 Disconnected) try creating a .bat file in your gnirehtet file containing gnirehtet run -d 1.1.1.1 and run it from there.
 
-
-<h1 style="font-size:300%;"></h1>
-
-<p></p>
-
-
 <h1><strong>Using the Source files:</strong></h1>
 
 The only files you actually need are START.cmd and config.txt, everything else comes from the Java version of [Gnirehtet](https://github.com/Genymobile/gnirehtet). <br>
 The NSIS script is only needed if you want to bundle it into an installer, make sure that you change the user derectory inside the script!
+
+
+<h1 style="font-size:300%;"></h1>
