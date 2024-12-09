@@ -9,7 +9,7 @@ RT-RP, which stands for Reverse Tethering RePack, is primarily designed as a wra
 
 
 <h1><strong>Features:</strong><br></h1>
-Launches SteamVR, SlimeVR Server, Amethyst, VRCFT, Virtual Desktop Streamer and ALVR alongside Gnirehtet for reverse tethering to an android based VR headset in order to use wifi only applications such as Virtual Desktop with a USB cable.
+Launches SteamVR, SlimeVR Server, Amethyst, VRCFT, Virtual Desktop Streamer, ALVR, Vive Hub and VRCX alongside Gnirehtet for reverse tethering to an android based VR headset in order to use wifi only applications such as Virtual Desktop with a USB cable.
 
 
 <p></p>
