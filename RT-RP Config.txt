@@ -1,0 +1,85 @@
+Dictates which programs to start.
+
+Launch_SteamVR=false
+
+Launch_Amethyst=true
+
+Launch_SlimeVR=true
+
+Launch_VRCFT=true
+
+Launch_Virtual_Desktop=true
+
+Launch_VIVE_HUB=true
+
+Launch_ALVR=true
+
+Launch_VRCX=true
+
+
+
+
+Application paths.
+
+Amethyst=C:\Program Files\WindowsApps\11835K2VRTeam.Amethyst-OpenSourceBodyTracking_1.2.14.0_x64__g2vc4cfdbyb66\Amethyst.exe
+
+SlimeVR=C:\Program Files (x86)\SlimeVR Server\slimevr.exe
+
+VRCFT=C:\Program Files\WindowsApps\96ba052f-0948-44d8-86c4-a0212e4ae047_5.2.3.0_x64__4s4k90pjvq32p\VRCFaceTracking.exe
+
+Virtual_Desktop=C:\Program Files\Virtual Desktop Streamer\VirtualDesktop.Streamer.exe
+
+Vive_Hub=C:\Program Files\VIVE Hub\VIVE Hub\VHConsole\VHConsole.exe
+
+ALVR=
+
+VRCX=C:\Program Files\VRCX\VRCX.exe
+
+
+
+Misc.
+
+Enable_Sound=true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EnableSound=False
