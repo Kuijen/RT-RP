@@ -23,7 +23,7 @@ Launches SteamVR, SlimeVR Server, Amethyst, VRCFT, Virtual Desktop Streamer, ALV
 
 4. If you have issues with it disconnecting (Client #0 Disconnected) try creating a .bat file in your gnirehtet file containing gnirehtet run -d 1.1.1.1 and run it from there.
 
-5. You can change which apps are allowed to launch by changing true to false in "RT-RP Config.txt" inside your Documents folder, you can also change their install directories in the same file.
+5. You can change which apps are allowed to launch by changing true to false and vice versa in "RT-RP Config.txt" inside your Documents folder, you can also change their install directories in the same file.
 
 <h1><strong>Using the Source files:</strong></h1>
 
