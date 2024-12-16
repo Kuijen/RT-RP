@@ -27,6 +27,8 @@ Launches SteamVR, SlimeVR Server, Amethyst, VRCFT, Virtual Desktop Streamer, ALV
 
 6. Using HEVC/HEVC 10-Bit and possibly AV1 is recommended for Virtual Desktop to avoid stutters.
 
+7. Disabling unneeded launch options does speed up the script ever so slightly. 
+
 <h1><strong>Using the Source files:</strong></h1>
 
 The only files you actually need are START.cmd and config.txt, everything else comes from the Java version of [Gnirehtet](https://github.com/Genymobile/gnirehtet).<br> Just put the files into the same folder as Gnirehtet and run START.cmd to launch the script.
