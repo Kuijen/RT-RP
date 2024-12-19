@@ -6,15 +6,17 @@ Steps to install and run it:
 
 3. If "ERROR Main: Execution error: Command adb ["shell", "dumpsys", "package", "com.genymobile.gnirehtet"] returned with value 1" or "'java' is not recognized as an internal or external command," comes up it usually either means that your device is not connected, that there is something wrong with the START.cmd script or that the Java Runtime got borked. In that case a reinstall would probably fix it.
 
-4. Comment out Virtual desktop in the START.cmd if you do not want Virtual Desktop to start alongside RTRP by adding (::) in front of the line.
+4. There is a config file called config.txt inside the installation folder where you can customize what apps will launch.
 
-5. Yes lag spikes are common, it is what it is.
+5. If you have issues with it disconnecting (Client #0 Disconnected) try creating a .bat file in your gnirehtet file containing gnirehtet run -d 1.1.1.1 and run it from there.
 
-6. If you have issues with it disconnecting (Client #0 Disconnected) try creating a .bat file in your gnirehtet file containing gnirehtet run -d 1.1.1.1 and run it from there.
+6. You can change which apps are allowed to launch by changing true to false and vice versa in "RT-RP Config.txt" inside your Documents folder, you can also change their install directories in the same file.
+
+7. Using HEVC/HEVC 10-Bit and possibly AV1 is recommended for Virtual Desktop to avoid stutters.
+
+8. Disabling unneeded launch options does speed up the script ever so slightly.
 
 
-
-START.cmd Copyright 2024 by KUIJEN is licensed under GNU General Public Licence Version 3.0 https://www.gnu.org/licenses/gpl-3.0.txt
 
 -Yours Truly-
    KUIJEN
