@@ -12,7 +12,7 @@ Steps to install and run it:
 
 6. You can change which apps are allowed to launch by changing true to false and vice versa in "RT-RP Config.txt" inside your Documents folder, you can also change their install directories in the same file.
 
-7. Using HEVC/HEVC 10-Bit and possibly AV1 is recommended for Virtual Desktop to avoid stutters.
+7. Using HEVC/HEVC 10-Bit and possibly AV1 is recommended for PCVR Streaming to avoid stutters.
 
 8. Disabling unneeded launch options does speed up the script ever so slightly.
 
