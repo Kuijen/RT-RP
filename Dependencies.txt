@@ -6,6 +6,7 @@ Gnirehtet Java with the .exe and .apk from the latest build and the other compon
 
 ADB: https://developer.android.com/tools/releases/platform-tools
 
+cmdmp3: https://github.com/jimlawless/cmdmp3
 
 Nullsoft Scriptable Install System: https://nsis.sourceforge.io/Download
 RT-RP.nsi is just the script to compile the installer with NSIS, Make a folder called "Source" on your desktop, this is where the script will grab everything from.
