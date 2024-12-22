@@ -11,7 +11,7 @@ REM Displays the Logo
  @echo[
  @echo[
  @echo[
- @echo off & Title RT-RP V2.5.5
+ @echo off & Title RT-RP V2.5.6
  echo/  /$$$$$$$  /$$$$$$$$      /$$$$$$$  /$$$$$$$ 
  echo/ ^| $$__  $$^|__  $$__/     ^| $$__  $$^| $$__  $$
  echo/ ^| $$  \ $$   ^| $$        ^| $$  \ $$^| $$  \ $$
@@ -19,7 +19,7 @@ REM Displays the Logo
  echo/ ^| $$__  $$   ^| $$^|______/^| $$__  $$^| $$____/ 
  echo/ ^| $$  \ $$   ^| $$        ^| $$  \ $$^| $$      
  echo/ ^| $$  ^| $$   ^| $$        ^| $$  ^| $$^| $$      
- echo/ ^|__/  ^|__/   ^|__/ V2.5.5 ^|__/  ^|__/^|__/      
+ echo/ ^|__/  ^|__/   ^|__/ V2.5.6 ^|__/  ^|__/^|__/      
  echo/                                        
  echo/                        
  echo/                                              
@@ -56,11 +56,18 @@ for /f "usebackq tokens=1,2 delims==" %%A in ("%config%") do (
 REM Define the path to check for vrmonitor.exe (SteamVR)
 set "steamvrpath=C:\Program Files (x86)\Steam\steamapps\common\SteamVR\bin\win64\vrmonitor.exe"
 
+
+IF not EXIST "%steamvrpath%" (
+ echo SteamVR Is [33mNot[0m Installed!
+)
+
+
 REM Check if vrmonitor.exe (SteamVR) is running
 tasklist /FI "IMAGENAME eq vrmonitor.exe" 2>NUL | find /I "vrmonitor.exe" >NUL
 IF %ERRORLEVEL% EQU 0 (
     echo SteamVR is [92mAlready Running![0m
     goto :res1
+
 )
 
 REM Check if SteamVR should launch
@@ -70,7 +77,7 @@ if "%Launch_SteamVR%"=="1" (
         start "" "%steamvrpath%"
         echo SteamVR [92mStarted![0m
     ) ELSE (
-        (echo SteamVR Was [33mNot[0m Found!) && pause & rundll32 url.dll,FileProtocolHandler https://store.steampowered.com/app/250820/SteamVR/ & exit
+        (echo SteamVR Was [33mNot[0m Found!) && pause & rundll32 url.dll,FileProtocolHandler https://store.steampowered.com/app/250820/SteamVR/
     )
 ) ELSE (
     goto :res1
@@ -280,3 +287,36 @@ if %Enable_Sound%==1 (
 
 
 :: START.cmd Copyright 2024 by KUIJEN is licensed under GNU General Public Licence Version 3.0 https://www.gnu.org/licenses/gpl-3.0.txt
+
+::                          *@@@@@@@@@@#######@@@@@@@@@@                          
+::                     %@@@@@                          ,@@@@@(                    
+::                 @@@@&                                     @@@@.                
+::              @@@@                                            ,@@@%             
+::           ,@@@                                                   @@@           
+::         &@@                                                        @@@.        
+::       %@@.                                                           @@@       
+::      @@@      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                    @@@     
+::     @@       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                   %@@    
+::   ,@@        #@@@@@@@@@@@@@@@@@@    &@@@@@@@@@@@@@@@@&                   .@@   
+::  /@@           @@@@@@@@@@@@@@/      @@@@@@@@@@@@@@@@@@%                   ,@@  
+::  @@                               #@@@@@@@@@@@@@@@@@@@@/                   @@@ 
+:: %@%                              @@@@@@@@@@@@@@@@@@@@@@@,                   @@ 
+:: @@                              @@@@@@@      @@@@@@@@@@@@                   %@@
+:: @@                            @@@@@@@@@@      @@@@@@@@@@@@                   @@
+:: @@                           @@@@@@@@@@@        @@@@@@@@@@@                  @@
+:: @@                         *@@@@@@@@@@@          &@@@@@@@@@@                 @@
+:: @@                        @@@@@@@#                 @@@@@@@@@@               %@@
+:: %@@                      @@@@@@&                    #@@@@@@@@@              @@ 
+::  @@                    @@@@@@,                        @@@@@@@@%            @@@ 
+::   @@                  @@@@@.                           @@@@@@@@&          ,@@  
+::   ,@@                                                    @@@@@@@,        /@@   
+::     @@/                                                   (@@@@@@       @@@    
+::      @@@                                                    @@@@@      @@/     
+::       .@@#                                                           @@@       
+::         .@@@                                                       @@@         
+::            @@@                                                  %@@@           
+::              %@@@,                                           %@@@,             
+::                  @@@@                                    /@@@@                 
+::                      @@@@@&                        ,@@@@@&                     
+::                           *@@@@@@@@@@@@@@@@@@@@@@@@@*                          
+ 
