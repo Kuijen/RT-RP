@@ -15,7 +15,7 @@ Launches SteamVR, SlimeVR Server, Amethyst, VRCFT, Virtual Desktop Streamer, ALV
 <p></p>
 <h1><strong>Usage:</strong></h1>
 
-1. Make sure that Developer Mode is enabled and that the USB Debugging prompt inside the headset is accepted!
+1. Make sure that Developer Mode is enabled and that the USB Debugging prompt inside the headset is accepted! Also make sure that MTP is enabled.
 
 2. Connect your headset to your computer and run RT-RP, a command prompt should pop-up and it should say "Performing Streamed Install", after that you should get a window pop-up on your headset asking for permission, press accept.
 
