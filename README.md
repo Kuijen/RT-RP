@@ -19,17 +19,19 @@ Launches SteamVR, SlimeVR Server, Amethyst, VRCFT, Virtual Desktop Streamer, ALV
 
 2. Connect your headset to your computer and run RT-RP, a command prompt should pop-up and it should say "Performing Streamed Install", after that you should get a window pop-up on your headset asking for permission, press accept.
 
-3. If "ERROR Main: Execution error: Command adb ["shell", "dumpsys", "package", "com.genymobile.gnirehtet"] returned with value 1" it just means that you need to connect your headset and try again, make sure developer mode is enabled on your headset.
+3. if you see ports opeining and closing in the commands promt it means you successfully connected to your PC and you can now launch into whatever app you want to use it for.
 
-4. if you see "'java' is not recognized as an internal or external command," comes up it usually means that the Java Runtime got borked. In that case a reinstall would probably fix it, alternatively you can use the runtime installer inside RT-RP's install directory.
+4. If "ERROR Main: Execution error: Command adb ["shell", "dumpsys", "package", "com.genymobile.gnirehtet"] returned with value 1" it just means that you need to connect your headset and try again, make sure developer mode is enabled on your headset.
 
-5. If you have issues with it disconnecting (Client #0 Disconnected) try creating a .bat file in your gnirehtet file containing gnirehtet run -d 1.1.1.1 and run it from there.
+5. if you see "'java' is not recognized as an internal or external command," comes up it usually means that the Java Runtime got borked. In that case a reinstall would probably fix it, alternatively you can use the runtime installer inside RT-RP's install directory.
 
-6. You can change which apps are allowed to launch by changing true to false and vice versa in "RT-RP Config.txt" inside your Documents folder, you can also change their install directories in the same file.
+6. If you have issues with it disconnecting (Client #0 Disconnected) try creating a .bat file in your gnirehtet file containing gnirehtet run -d 1.1.1.1 and run it from there.
 
-7. Using HEVC/HEVC 10-Bit and possibly AV1 is recommended for Virtual Desktop to avoid stutters.
+7. You can change which apps are allowed to launch by changing true to false and vice versa in "RT-RP Config.txt" inside your Documents folder, you can also change their install directories in the same file.
 
-8. Disabling unneeded launch options does speed up the script ever so slightly. 
+8. Using HEVC/HEVC 10-Bit and possibly AV1 is recommended for Virtual Desktop to avoid stutters.
+
+9. Disabling unneeded launch options does speed up the script ever so slightly. 
 
 <h1><strong>Using the Source files:</strong></h1>
 
