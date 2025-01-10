@@ -25,13 +25,11 @@ Launches SteamVR, SlimeVR Server, Amethyst, VRCFT, Virtual Desktop Streamer, ALV
 
 5. if you see "'java' is not recognized as an internal or external command," comes up it usually means that the Java Runtime got borked. In that case a reinstall would probably fix it, alternatively you can use the runtime installer inside RT-RP's install directory.
 
-6. If you have issues with it disconnecting (Client #0 Disconnected) try creating a .bat file in your gnirehtet file containing gnirehtet run -d 1.1.1.1 and run it from there.
+6. You can change which apps are allowed to launch by changing true to false and vice versa in "RT-RP Config.txt" inside your Documents folder, you can also change their install directories in the same file.
 
-7. You can change which apps are allowed to launch by changing true to false and vice versa in "RT-RP Config.txt" inside your Documents folder, you can also change their install directories in the same file.
+7. Using HEVC/HEVC 10-Bit and possibly AV1 is recommended for Virtual Desktop to avoid stutters.
 
-8. Using HEVC/HEVC 10-Bit and possibly AV1 is recommended for Virtual Desktop to avoid stutters.
-
-9. Disabling unneeded launch options does speed up the script ever so slightly. 
+8. Disabling unneeded launch options does speed up the script ever so slightly. 
 
 <h1><strong>Using the Source files:</strong></h1>
 
