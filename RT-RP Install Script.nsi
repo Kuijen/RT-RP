@@ -82,24 +82,30 @@ SectionEnd
 ; Uninstaller
 
 Section "Uninstall"
-  
-  ; Remove registry keys
+
+ ExecWait 'taskkill /F /IM adb.exe'
+
+  ; Safety check: Don't allow empty or root INSTDIR
+  StrCmp $INSTDIR "" done
+  StrCmp $INSTDIR "$PROGRAMFILES" done
+  StrCmp $INSTDIR "$PROGRAMFILES64" done
+  StrCmp $INSTDIR "$PROGRAMFILES32" done
+
+  ; Remove registry keys (ignore errors if they don’t exist)
   DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\RTRP"
-  DeleteRegKey HKLM SOFTWARE\RTRP
+  DeleteRegKey HKLM "Software\RTRP"
 
-  ; Remove files and uninstaller
-  Delete $INSTDIR\RTRP
-  Delete $INSTDIR\uninstall.exe
-
-  ; Remove shortcuts, if any
+  ; Remove shortcuts, if they exist
+  Delete "$DESKTOP\RTRP.lnk"
   Delete "$SMPROGRAMS\RTRP\*.lnk"
-  Delete "$DESKTOP\START RT.lnk"
 
-  ; Remove directories
+  ; Remove folders
   RMDir /r "$SMPROGRAMS\RTRP"
   RMDir /r "$INSTDIR"
 
+done:
 SectionEnd
+
 
 Section "Desktop Shortcut" SectionX
     SetShellVarContext current
