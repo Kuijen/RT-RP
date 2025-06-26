@@ -20,6 +20,8 @@ Launch_VRCX=true
 
 
 Application paths.
+(Make sure there is no space between the "=" and the drive letter)
+
 
 Amethyst=C:\Program Files\WindowsApps\11835K2VRTeam.Amethyst-OpenSourceBodyTracking_1.2.14.0_x64__g2vc4cfdbyb66\Amethyst.exe
 
@@ -39,47 +41,6 @@ VRCX=C:\Program Files\VRCX\VRCX.exe
 
 Misc.
 
+High_Prioriority=false
+
 Enable_Sound=true
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-EnableSound=False
