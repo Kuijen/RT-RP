@@ -115,7 +115,13 @@ SectionEnd
 
 Function .onInstSuccess
     IfFileExists "$INSTDIR\Text Files\README.txt" openReadMe
+
+    ; Delete regardless of whether readme exists or not
+    Delete "$DOCUMENTS\RT-RP Config.txt"
     Return
+
 openReadMe:
     ExecShell "open" "$INSTDIR\Text Files\README.txt"
+    Delete "$DOCUMENTS\RT-RP Config.txt"
+    Return
 FunctionEnd
