@@ -11,7 +11,7 @@ REM Displays the Logo
  @echo[
  @echo[
  @echo[
- @echo off & Title RT-RP V2.5.8
+ @echo off & Title RT-RP V2.5.9
  echo/  /$$$$$$$  /$$$$$$$$      /$$$$$$$  /$$$$$$$ 
  echo/ ^| $$__  $$^|__  $$__/     ^| $$__  $$^| $$__  $$
  echo/ ^| $$  \ $$   ^| $$        ^| $$  \ $$^| $$  \ $$
@@ -19,7 +19,7 @@ REM Displays the Logo
  echo/ ^| $$__  $$   ^| $$^|______/^| $$__  $$^| $$____/ 
  echo/ ^| $$  \ $$   ^| $$        ^| $$  \ $$^| $$      
  echo/ ^| $$  ^| $$   ^| $$        ^| $$  ^| $$^| $$      
- echo/ ^|__/  ^|__/   ^|__/ V2.5.8 ^|__/  ^|__/^|__/      
+ echo/ ^|__/  ^|__/   ^|__/ V2.5.9 ^|__/  ^|__/^|__/      
  echo/                                        
  echo/                        
  echo/                                              
@@ -264,10 +264,10 @@ echo.
 echo.
 
 REM Starts gnirehtet, the program responsible for the reverse tether.
-gnirehtet.exe start
+gnirehtet.exe start > NUL
 
 REM Checks if High priority is set to true or false and responds accordingly.
-if "%High_Prioriority%"=="1" start /MIN "" "High Priority.CMD"
+if "%High_Prioriority%"=="1" start /MIN "" "High Priority.CMD" && echo Launching In [4;33mHigh[0m Priority!
 
 REM Throws an error if gnirehtet fails to run and prompts the user to reset the script and plays the error sound
 if errorlevel 1 (
@@ -285,8 +285,13 @@ if %Enable_Sound%==1 (
  start "" "cmdmp3win.exe" "STM\start.mp3"
 )
 
-@java -jar gnirehtet.jar relay
-@pause
+echo [4;92mRT Started Successfully!![0m
+
+@java -jar gnirehtet.jar relay > NUL 2>&1
+
+echo [1;97;41mAnother Instance of RT-RP Is Already Running!!![0m
+
+@pause >NUL
 
 :: START.cmd Copyright 2025 by KUIJEN is licensed under GNU General Public Licence Version 3.0 https://www.gnu.org/licenses/gpl-3.0.txt
 
