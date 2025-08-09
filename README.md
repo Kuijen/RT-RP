@@ -2,7 +2,7 @@
 A wrapper made for [Gnirehtet](https://github.com/Genymobile/gnirehtet) to streamline usage for Android based VR headsets
 
 <h1><strong>What is it?</strong><br></h1>
-RT-RP, which stands for Reverse Tethering RePack, is primarily designed as a wrapper for Gnirehtet, a program that enables reverse tethering through ADB for Android devices. RT-RP adds extra features for greater ease of use and convenience, tailored specifically to work better with Android based VR headsets.
+RT-RP (Reverse Tethering RePack) is a plug and play wrapper script with some quality of life features for Gnirehtet, tailored for Android based VR headsets to use WIFI only applications such as Virtual Desktop over a USB cable through ADB.
 <br></br>
 
 <img width="2119" height="1355" alt="Screenshot 2025-07-13 232006" src="https://github.com/user-attachments/assets/7d977871-49ea-4387-86b4-78f693fa0aee" />
