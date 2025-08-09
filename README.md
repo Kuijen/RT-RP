@@ -18,7 +18,7 @@ Launches SteamVR, SlimeVR Server, Amethyst, VRCFT, Virtual Desktop Streamer, ALV
 
 2. Connect your headset to your computer and run RT-RP, a command prompt should pop-up and it should say "Performing Streamed Install", after that you should get a window pop-up on your headset asking for permission, press accept.
 
-3. if you see ports opeining and closing in the commands promt it means you successfully connected to your PC and you can now launch into whatever app you want to use it for.
+3. if you see "RT Started Successfully!!" it means you successfully connected to your PC and you can now launch into whatever app you want to use it for.
 
 4. If "ERROR Main: Execution error: Command adb ["shell", "dumpsys", "package", "com.genymobile.gnirehtet"] returned with value 1" it just means that you need to connect your headset and try again, make sure developer mode is enabled on your headset.
 
