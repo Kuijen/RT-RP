@@ -1,5 +1,5 @@
 # RT-RP
-A wrapper made for [Gnirehtet](https://github.com/Genymobile/gnirehtet) to streamline usage for Android based VR headsets
+A wrapper made for [Gnirehtet](https://github.com/Genymobile/gnirehtet) to streamline usage for Android based VR headsets <br>
 (Everythign comes bundled inside of the RT-RP insaller)
 
 <h1><strong>What is it?</strong><br></h1>
