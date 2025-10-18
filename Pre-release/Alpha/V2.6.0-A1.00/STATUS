@@ -1,0 +1,13 @@
+V2.6.0 Alpha 1
+
+1. Finish half baked user defined app launcher.
+2. Change "RT-RP Config.txt" to "RT-RP Config.ini" to differentiate it from other files due to it being located in the "Documents" User directory
+3. Adjust NSIS script to reflect config extention change. E.g. make sure the old file still gets deleted like with current behaviour and make sure that the new .ini gets backed up and either renamed or moved to a backup folder inside Documents.
+4. Look into whether a "USB Selective Supend" toggle is needed.
+5. Look into the connection issues (probably a meta issue but still)
+
+
+
+CURRENT PROGRESS:
+First entry of the user defined app launcher is done.
+The rest of the features still need to be implemented.
