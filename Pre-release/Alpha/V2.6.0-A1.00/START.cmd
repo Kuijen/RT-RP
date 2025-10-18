@@ -262,34 +262,6 @@ if "%Launch_VRCX%"=="1" (
 
 :res8
 
-
-::if "%Launch_APP1%"=="1" 
-::    if defined APP1_path (
-::    if exist "!APP1_path!" (
-::        start "" "!APP1_path!"
-::            echo !APP1! started
-::        ) else (
-::              echo no !APP1! found )
-::                ) else ( echo no path specified !APP1!
-::)
-
-REM Custom app launch stuff
-::if "!Launch_APP1!"=="1" (
-:    if defined APP1_path (
-:        if exist "!APP1_path!" (
-:            start "" "!APP1_path!"
-:            echo !APP1! started
-:        ) else (
-:            echo No !APP1! found
-:        )
-:    ) else (
-:        echo !APP1! not installed
-:    )
-::)
-
-
-
-
 REM Custom app launch stuff
 if "!Launch_APP1!"=="1" (
         if exist "!APP1_path!" (
@@ -297,6 +269,96 @@ if "!Launch_APP1!"=="1" (
             echo !APP1! [92mStarted![0m
         ) else (
             echo !APP1! Was [33mNot[0m Found!
+        )
+)
+
+REM Custom app launch stuff
+if "!Launch_APP2!"=="1" (
+        if exist "!APP2_path!" (
+            start "" "!APP2_path!"
+            echo !APP2! [92mStarted![0m
+        ) else (
+            echo !APP2! Was [33mNot[0m Found!
+        )
+)
+
+REM Custom app launch stuff
+if "!Launch_APP3!"=="1" (
+        if exist "!APP3_path!" (
+            start "" "!APP3_path!"
+            echo !APP3! [92mStarted![0m
+        ) else (
+            echo !APP3! Was [33mNot[0m Found!
+        )
+)
+
+REM Custom app launch stuff
+if "!Launch_APP4!"=="1" (
+        if exist "!APP4_path!" (
+            start "" "!APP4_path!"
+            echo !APP4! [92mStarted![0m
+        ) else (
+            echo !APP4! Was [33mNot[0m Found!
+        )
+)
+
+REM Custom app launch stuff
+if "!Launch_APP5!"=="1" (
+        if exist "!APP5_path!" (
+            start "" "!APP5_path!"
+            echo !APP5! [92mStarted![0m
+        ) else (
+            echo !APP5! Was [33mNot[0m Found!
+        )
+)
+
+REM Custom app launch stuff
+if "!Launch_APP6!"=="1" (
+        if exist "!APP6_path!" (
+            start "" "!APP6_path!"
+            echo !APP6! [92mStarted![0m
+        ) else (
+            echo !APP6! Was [33mNot[0m Found!
+        )
+)
+
+REM Custom app launch stuff
+if "!Launch_APP7!"=="1" (
+        if exist "!APP7_path!" (
+            start "" "!APP7_path!"
+            echo !APP7! [92mStarted![0m
+        ) else (
+            echo !APP7! Was [33mNot[0m Found!
+        )
+)
+
+REM Custom app launch stuff
+if "!Launch_APP7!"=="1" (
+        if exist "!APP7_path!" (
+            start "" "!APP7_path!"
+            echo !APP7! [92mStarted![0m
+        ) else (
+            echo !APP7! Was [33mNot[0m Found!
+        )
+)
+
+REM Custom app launch stuff
+if "!Launch_APP8!"=="1" (
+        if exist "!APP8_path!" (
+            start "" "!APP8_path!"
+            echo !APP8! [92mStarted![0m
+        ) else (
+            echo !APP8! Was [33mNot[0m Found!
+        )
+)
+
+REM Custom app launch stuff
+if "!Launch_APP9!"=="1" (
+        if exist "!APP9_path!" (
+            start "" "!APP9_path!"
+            echo !APP9! [92mStarted![0m
+        ) else (
+            echo !APP9! Was [33mNot[0m Found!
         )
 )
 
