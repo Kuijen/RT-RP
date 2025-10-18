@@ -10,11 +10,12 @@ Steps to install and run it:
 
 5. Disabling unneeded launch options does speed up the script ever so slightly.
 
-6. you can change the settings and launch options inside (Documents > "RT-RP Config.txt") E.g changing "Launch_SteamVR" from "false" to "true" and vice versa will enable or disable that app from being launched.
+6. you can change the settings and launch options inside (Documents > "RT-RP Config.ini") E.g changing "Launch_SteamVR" from "false" to "true" and vice versa will enable or disable that app from being launched.
 You can also change the .exe paths for programs in the same text file, make use there are no spaces.
 Lastly there are some miscellaneous settings like "High_Prioriority" 
 
 
 
 -Yours Truly-
+
    KUIJEN
