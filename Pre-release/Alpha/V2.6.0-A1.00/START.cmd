@@ -11,7 +11,7 @@ REM Displays the Logo
  @echo[
  @echo[
  @echo[
- @echo off & Title RT-RP V2.6.0
+ @echo off & Title RT-RP V2.6.0 Beta 2.1
  echo/  /$$$$$$$  /$$$$$$$$      /$$$$$$$  /$$$$$$$ 
  echo/ ^| $$__  $$^|__  $$__/     ^| $$__  $$^| $$__  $$
  echo/ ^| $$  \ $$   ^| $$        ^| $$  \ $$^| $$  \ $$
@@ -366,7 +366,7 @@ echo.
 echo.
 
 REM Starts gnirehtet, the program responsible for the reverse tether.
-gnirehtet.exe start > NUL
+gnirehtet.exe start > nul
 
 REM Checks if High priority is set to true or false and responds accordingly.
 if "%High_Prioriority%"=="1" start /MIN "" "High Priority.CMD" && echo Launching In [4;33mHigh[0m Priority!
@@ -387,11 +387,12 @@ if %Enable_Sound%==1 (
  start "" "cmdmp3win.exe" "STM\start.mp3"
 )
 
+if not defined Launch_Steam_Link_Client set "Launch_Steam_Link_Client=0"
+
 REM Launches steam link on the headset
 :: Couldn't get it running properly due to steam link complaining about not being on local network, to enable paste "Launch_Steam_Link_Client=true" in conf.
 if %Launch_Steam_Link_Client%==1 (
- start "" adb.exe shell monkey -p com.valvesoftware.steamlinkvr -c android.intent.category.LAUNCHER 1
-
+ start "" adb.exe shell monkey -p com.valvesoftware.steamlinkvr -c android.intent.category.LAUNCHER 1 
 )
 
 REM Launches the Virtual Desktop client on the headset.
@@ -401,7 +402,7 @@ if %Launch_VD_Client%==1 (
 
 echo [4;92mRT Started Successfully!![0m
 
-@java -jar gnirehtet.jar relay > NUL 2>&1
+@java -jar gnirehtet.jar relay > nul 2>&1
 
 echo [1;97;41mAnother Instance of RT-RP Is Already Running!!![0m
 
