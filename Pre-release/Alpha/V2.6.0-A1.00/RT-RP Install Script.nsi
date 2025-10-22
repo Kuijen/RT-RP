@@ -14,7 +14,7 @@
 Name "Reverse Tethering RePack Installer"
 
 ; The file to write
-OutFile "C:\Users\$PROFILE\Desktop\RTRP Installer.exe"
+OutFile "C:\Users\$PROFILE\Desktop\RT-RP Installer.exe"
 
 ; Request application privileges for Windows Vista and higher
 RequestExecutionLevel admin
@@ -54,13 +54,13 @@ Section "Java Runtime & Core Files (required)"
   
   File /r "C:\Users\KUIJEN\Desktop\Source\"
   
-  Execwait "$INSTDIR\Java Runtime Installer (online).exe"
+  Execwait "$INSTDIR\Java Runtime Installer.exe"
   
   ; Write the installation path into the registry
   WriteRegStr HKLM SOFTWARE\RTRP "Install_Dir" "$INSTDIR"
   
   ; Write the uninstall keys for Windows
-  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\RTRP" "DisplayName" "NSIS RTRP"
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\RTRP" "DisplayName" "RT-RP"
   WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\RTRP" "UninstallString" '"$INSTDIR\uninstall.exe"'
   WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\RTRP" "NoModify" 1
   WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\RTRP" "NoRepair" 1
@@ -72,8 +72,8 @@ SectionEnd
 Section "Start Menu Shortcuts"
 
   CreateDirectory "$SMPROGRAMS\RTRP"
-  CreateShortcut "$SMPROGRAMS\RTRP\Uninstall RTRP.lnk" "$INSTDIR\uninstall.exe"
-  CreateShortcut "$SMPROGRAMS\RTRP\RTRP.lnk" "$INSTDIR\START.cmd"
+  CreateShortcut "$SMPROGRAMS\RTRP\Uninstall RT-RP.lnk" "$INSTDIR\uninstall.exe"
+  CreateShortcut "$SMPROGRAMS\RTRP\RT-RP.lnk" "$INSTDIR\START.cmd"
 
 SectionEnd
 
@@ -96,7 +96,7 @@ Section "Uninstall"
   DeleteRegKey HKLM "Software\RTRP"
 
   ; Remove shortcuts, if they exist
-  Delete "$DESKTOP\RTRP.lnk"
+  Delete "$DESKTOP\RT-RP.lnk"
   Delete "$SMPROGRAMS\RTRP\*.lnk"
 
   ; Remove folders
@@ -109,7 +109,7 @@ SectionEnd
 
 Section "Desktop Shortcut" SectionX
     SetShellVarContext current
-    CreateShortCut "$DESKTOP\RTRP.lnk" "$INSTDIR\START.cmd"
+    CreateShortCut "$DESKTOP\RT-RP.lnk" "$INSTDIR\START.cmd"
 
 SectionEnd
 
