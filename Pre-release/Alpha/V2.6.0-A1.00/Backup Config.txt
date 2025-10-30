@@ -54,21 +54,21 @@ VRCX=C:\Program Files\VRCX\VRCX.exe
 .......... 1
 
 (App Name)
-APP1=test app 1 (Calculator)
+APP1=
 
 (Launch Toggle)
-Launch_APP1=true
+Launch_APP1=false
 
 (Exe Path)
-APP1_path="C:\Windows\System32\calc.exe"
+APP1_path=
 
 .......... 2
 
 (App Name)
-APP2=test 2
+APP2=
 
 (Launch Toggle)
-Launch_APP2=true
+Launch_APP2=false
 
 (Exe Path)
 APP2_path=
@@ -79,7 +79,7 @@ APP2_path=
 APP3=
 
 (Launch Toggle)
-Launch_APP3=true
+Launch_APP3=false
 
 (Exe Path)
 APP3_path=
@@ -90,7 +90,7 @@ APP3_path=
 APP4=
 
 (Launch Toggle)
-Launch_APP4=true
+Launch_APP4=false
 
 (Exe Path)
 APP4_path=
@@ -101,7 +101,7 @@ APP4_path=
 APP5=
 
 (Launch Toggle)
-Launch_APP5=true
+Launch_APP5=false
 
 (Exe Path)
 APP5_path=
@@ -112,7 +112,7 @@ APP5_path=
 APP6=
 
 (Launch Toggle)
-Launch_APP6=true
+Launch_APP6=false
 
 (Exe Path)
 APP6_path=
@@ -123,7 +123,7 @@ APP6_path=
 APP7=
 
 (Launch Toggle)
-Launch_APP7=true
+Launch_APP7=false
 
 (Exe Path)
 APP7_path=
@@ -134,7 +134,7 @@ APP7_path=
 APP8=
 
 (Launch Toggle)
-Launch_APP8=true
+Launch_APP8=false
 
 (Exe Path)
 APP8_path=
@@ -145,7 +145,7 @@ APP8_path=
 APP9=
 
 (Launch Toggle)
-Launch_APP9=true
+Launch_APP9=false
 
 (Exe Path)
 APP9_path=
@@ -154,7 +154,13 @@ APP9_path=
 
 [Misc]
 
-(changes Java's and ADB's process priority)
+(Toggles Reverse Tethering)
+Enable_RT=false
+
+(Toggles Internet Connection Sharing for Ethernet dongles)
+Enable_ICS=True
+
+(Changes Java's and ADB's process priority to High)
 High_Prioriority=false
 
 (Toggles the sounds coming form RT-RP)
