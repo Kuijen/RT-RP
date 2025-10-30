@@ -11,7 +11,7 @@ REM Displays the Logo
  @echo[
  @echo[
  @echo[
- @echo off & Title RT-RP V2.6.0 Beta 3
+ @echo off & Title RT-RP V2.6.0 Beta 4
  echo/  /$$$$$$$  /$$$$$$$$      /$$$$$$$  /$$$$$$$ 
  echo/ ^| $$__  $$^|__  $$__/     ^| $$__  $$^| $$__  $$
  echo/ ^| $$  \ $$   ^| $$        ^| $$  \ $$^| $$  \ $$
@@ -366,7 +366,9 @@ echo.
 echo.
 
 REM Installs gnirehtet.apk
-gnirehtet.exe start > nul
+if %Enable_RT%==1 (
+ gnirehtet.exe start > nul
+)
 
 REM Checks if High priority is set to true or false and responds accordingly.
 if "%High_Prioriority%"=="1" start /MIN "" "High Priority.CMD" && echo Launching In [4;33mHigh[0m Priority!
@@ -400,12 +402,16 @@ if %Launch_VD_Client%==1 (
     start "" adb.exe shell monkey -p VirtualDesktop.Android -c android.intent.category.LAUNCHER 1
 )
 
-endlocal
-
 echo [4;92mRT Started Successfully!![0m
 
 REM Starts the reverse tether.
-@java -jar gnirehtet.jar relay > nul 2>&1
+if %Enable_RT%==1 (
+ -jar gnirehtet.jar relay > nul 2>&1
+)
+
+if %Enable_ICS%==1 (
+   powershell -Command "Start-Process -FilePath '%CD%\ICS START.cmd' -WorkingDirectory '%CD%' -Verb RunAs"
+)
 
 echo [1;97;41mAnother Instance of RT-RP Is Already Running!!![0m
 
