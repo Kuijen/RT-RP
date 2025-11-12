@@ -6,6 +6,7 @@ V2.6.0 Alpha 1
 *4. Look into whether a "USB Selective Supend" toggle is needed.
 *5. Look into the connection issues (probably a meta issue but still)
 6. Look into whether the "goto" stuff in START.cmd is needed or not, and if it can be trimmed out.
+7. Add script to boost windows hotspot throughput.
 
 
 
