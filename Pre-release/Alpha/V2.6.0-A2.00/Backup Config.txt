@@ -1,0 +1,177 @@
+[PC Link]
+(Dictes which connection method is used)
+
+
+(Toggles Java Reverse Tether)
+Enable_Java_RT=false
+
+(Toggles Rust Reverse Tether)
+Enable_Rust_RT=false
+
+(Toggles Internet Connection Sharing for Ethernet dongles)
+Enable_ICS=false
+
+--------------------
+
+[PC Apps]
+(Dictates which programs to start)
+
+
+Launch_SteamVR=false
+
+Launch_Amethyst=false
+
+Launch_SlimeVR=true
+
+Launch_VRCFT=false
+
+Launch_Virtual_Desktop=true
+
+Launch_VIVE_HUB=false
+
+Launch_ALVR=false
+
+Launch_VRCX=true
+
+--------------------
+
+[Headset Apps]
+(Dictates which programs to start on the headset)
+
+
+(Launches Virtual Desktop inside the headset)
+Launch_VD_Client=true
+
+--------------------
+
+[PC Application paths]
+(Make sure there is no space between the "=" and the drive letter)
+
+
+Amethyst=C:\Program Files\WindowsApps\11835K2VRTeam.Amethyst-OpenSourceBodyTracking_1.2.14.0_x64__g2vc4cfdbyb66\Amethyst.exe
+
+SlimeVR=C:\Program Files (x86)\SlimeVR Server\slimevr.exe
+
+VRCFT=C:\Program Files\WindowsApps\96ba052f-0948-44d8-86c4-a0212e4ae047_5.2.3.0_x64__4s4k90pjvq32p\VRCFaceTracking.exe
+
+Virtual_Desktop=C:\Program Files\Virtual Desktop Streamer\VirtualDesktop.Streamer.exe
+
+Vive_Hub=C:\Program Files\VIVE Hub\VIVE Hub\VHConsole\VHConsole.exe
+
+ALVR=
+
+VRCX=C:\Program Files\VRCX\VRCX.exe
+
+--------------------
+
+[Custom App settings]
+
+.......... 1
+
+(App Name)
+APP1=
+
+(Launch Toggle)
+Launch_APP1=false
+
+(Exe Path)
+APP1_path=
+
+.......... 2
+
+(App Name)
+APP2=
+
+(Launch Toggle)
+Launch_APP2=false
+
+(Exe Path)
+APP2_path=
+
+.......... 3
+
+(App Name)
+APP3=
+
+(Launch Toggle)
+Launch_APP3=false
+
+(Exe Path)
+APP3_path=
+
+.......... 4
+
+(App Name)
+APP4=
+
+(Launch Toggle)
+Launch_APP4=false
+
+(Exe Path)
+APP4_path=
+
+.......... 5
+
+(App Name)
+APP5=
+
+(Launch Toggle)
+Launch_APP5=false
+
+(Exe Path)
+APP5_path=
+
+.......... 6
+
+(App Name)
+APP6=
+
+(Launch Toggle)
+Launch_APP6=false
+
+(Exe Path)
+APP6_path=
+
+.......... 7
+
+(App Name)
+APP7=
+
+(Launch Toggle)
+Launch_APP7=false
+
+(Exe Path)
+APP7_path=
+
+.......... 8
+
+(App Name)
+APP8=
+
+(Launch Toggle)
+Launch_APP8=false
+
+(Exe Path)
+APP8_path=
+
+.......... 9
+
+(App Name)
+APP9=
+
+(Launch Toggle)
+Launch_APP9=false
+
+(Exe Path)
+APP9_path=
+
+--------------------
+
+[Misc]
+
+
+(Changes Java's and ADB's process priority to High)
+High_Prioriority=false
+
+(Toggles the sounds coming form RT-RP)
+Enable_Sound=true
