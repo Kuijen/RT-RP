@@ -1,1 +1,2 @@
-
+Funtional feature complete versions of V2.6.0!!
+Some minor testing an cleanup might be needed still.
