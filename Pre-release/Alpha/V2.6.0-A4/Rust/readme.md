@@ -1,4 +1,4 @@
-~~<strong>All of the needed files are present <br> all you have to do is to shove everything from this directory into a single folder on your own machine!</strong></strong>~~
+All of the needed files are present <br> all you have to do is to shove everything from this directory into a single folder on your own machine!
 <br>
 <br>
 <strong>Credit to garnet_official for gnirehtet-g7</strong>
