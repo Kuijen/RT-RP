@@ -25,7 +25,7 @@ Launches SteamVR, SlimeVR Server, Amethyst, VRCFT, Virtual Desktop Streamer, ALV
 
 5. if you see "'java' is not recognized as an internal or external command," comes up it usually means that the Java Runtime got borked. In that case a reinstall would probably fix it, alternatively you can use the runtime installer inside RT-RP's install directory.
 
-6. You can change which apps are allowed to launch by changing true to false and vice versa in "RT-RP Config.txt" inside your Documents folder, you can also change their install directories in the same file.
+6. You can change which apps are allowed to launch by changing true to false and vice versa in "RT-RP Config.ini" inside your Documents folder, you can also change their install directories in the same file.
 
 7. Using HEVC/HEVC 10-Bit and possibly AV1 is recommended for Virtual Desktop to avoid stutters.
 
