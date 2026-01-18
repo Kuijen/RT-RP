@@ -1,4 +1,6 @@
-Dictates which programs to start.
+[PC Apps]
+(Dictates which programs to start)
+
 
 Launch_SteamVR=false
 
@@ -16,10 +18,18 @@ Launch_ALVR=true
 
 Launch_VRCX=true
 
+--------------------
+
+[Headset Apps]
+(Dictates which programs to start on the headset)
 
 
+(Launches Virtual Desktop inside the headset)
+Launch_VD_Client=false
 
-Application paths.
+--------------------
+
+[PC Application paths]
 (Make sure there is no space between the "=" and the drive letter)
 
 
@@ -37,10 +47,121 @@ ALVR=
 
 VRCX=C:\Program Files\VRCX\VRCX.exe
 
+--------------------
 
+[Custom App settings]
 
-Misc.
+.......... 1
 
+(App Name)
+APP1=
+
+(Launch Toggle)
+Launch_APP1=false
+
+(Exe Path)
+APP1_path=
+
+.......... 2
+
+(App Name)
+APP2=
+
+(Launch Toggle)
+Launch_APP2=false
+
+(Exe Path)
+APP2_path=
+
+.......... 3
+
+(App Name)
+APP3=
+
+(Launch Toggle)
+Launch_APP3=false
+
+(Exe Path)
+APP3_path=
+
+.......... 4
+
+(App Name)
+APP4=
+
+(Launch Toggle)
+Launch_APP4=false
+
+(Exe Path)
+APP4_path=
+
+.......... 5
+
+(App Name)
+APP5=
+
+(Launch Toggle)
+Launch_APP5=false
+
+(Exe Path)
+APP5_path=
+
+.......... 6
+
+(App Name)
+APP6=
+
+(Launch Toggle)
+Launch_APP6=false
+
+(Exe Path)
+APP6_path=
+
+.......... 7
+
+(App Name)
+APP7=
+
+(Launch Toggle)
+Launch_APP7=false
+
+(Exe Path)
+APP7_path=
+
+.......... 8
+
+(App Name)
+APP8=
+
+(Launch Toggle)
+Launch_APP8=false
+
+(Exe Path)
+APP8_path=
+
+.......... 9
+
+(App Name)
+APP9=
+
+(Launch Toggle)
+Launch_APP9=false
+
+(Exe Path)
+APP9_path=
+
+--------------------
+
+[Misc]
+
+(Toggles RT to use either Rust/Java RT or ethernet through ICS)
+Enable_RT=true
+
+(Toggles Internet Connection Sharing for ethernet dongles)
+Enable_ICS=false
+
+(Changes Java's and ADB's process priority to High)
 High_Prioriority=false
 
+(Toggles the sounds coming form RT-RP)
 Enable_Sound=true
