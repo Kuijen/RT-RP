@@ -1,6 +1,7 @@
+
+@echo off
 REM Kills Virtual Desktop when the script starts or resets
 :start
-@echo off
  tasklist >NUL | findstr "Virtual Desktop Streamer" 
  taskkill >NUL /F /IM VirtualDesktop.Streamer.exe
  cls
@@ -11,7 +12,7 @@ REM Displays the Logo
  @echo[
  @echo[
  @echo[
- @echo off & Title RT-RP V2.5.9
+ @echo off & Title RT-RP V2.6.0
  echo/  /$$$$$$$  /$$$$$$$$      /$$$$$$$  /$$$$$$$ 
  echo/ ^| $$__  $$^|__  $$__/     ^| $$__  $$^| $$__  $$
  echo/ ^| $$  \ $$   ^| $$        ^| $$  \ $$^| $$  \ $$
@@ -19,20 +20,22 @@ REM Displays the Logo
  echo/ ^| $$__  $$   ^| $$^|______/^| $$__  $$^| $$____/ 
  echo/ ^| $$  \ $$   ^| $$        ^| $$  \ $$^| $$      
  echo/ ^| $$  ^| $$   ^| $$        ^| $$  ^| $$^| $$      
- echo/ ^|__/  ^|__/   ^|__/ V2.5.9 ^|__/  ^|__/^|__/      
+ echo/ ^|__/  ^|__/   ^|__/ V2.6.0 ^|__/  ^|__/^|__/      
  echo/                                        
- echo/                        
+ echo/                JAVA EDITION
  echo/                                              
  echo/ 
  echo/ 
  @echo off
 )
 
+setlocal enabledelayedexpansion
+
 REM Defines the Backup Config location as "cfgbk"
 set "cfgbk=Text Files\Backup Config.txt"
 
 REM Defines the Config file location as "config"
-set "config=%userprofile%\Documents\RT-RP Config.txt"
+set "config=%userprofile%\Documents\RT-RP Config.ini"
 
 REM Checks if the config file exists and puts it in it's correct place if it isn't
 if not exist "%config%" (
@@ -104,8 +107,6 @@ if "%Launch_Amethyst%"=="1" (
     ) ELSE (
         echo Amethyst Was [33mNot[0m Found!
     )
-) ELSE (
-    goto :res2
 )
 
 :res2
@@ -129,8 +130,6 @@ if "%Launch_SlimeVR%"=="1" (
     ) ELSE (
         echo SlimeVR Server Was [33mNot[0m Found!
     )
-) ELSE (
-    goto :res3
 )
 
 :res3
@@ -240,7 +239,7 @@ set "VRCXpath=%VRCX%"
 
 REM Check if VRCX.exe is running
 tasklist /FI "IMAGENAME eq VRCX.exe" 2>NUL | find /I "VRCX.exe" >NUL
-IF %ERRORLEVEL% EQU 0 (
+if %ERRORLEVEL% EQU 0 (
     echo VRCX is [92mAlready Running![0m
     goto :res8
 )
@@ -248,23 +247,125 @@ IF %ERRORLEVEL% EQU 0 (
 REM Check if VRCX should launch
 if "%Launch_VRCX%"=="1" (
     REM Check if VRCX.exe exists at the specified path
-    IF EXIST "%VRCXpath%" (
+    if exist "%VRCXpath%" (
         start "" "%VRCXpath%"
         echo VRCX [92mStarted![0m
-    ) ELSE (
+    ) else (
         echo VRCX Was [33mNot[0m Found!
     )
-) ELSE (
+) else (
     goto :res8
 )
 
 :res8
 
+REM Custom app launch stuff
+if "!Launch_APP1!"=="1" (
+        if exist "!APP1_path!" (
+            start "" "!APP1_path!"
+            echo !APP1! [92mStarted![0m
+        ) else (
+            echo !APP1! Was [33mNot[0m Found!
+        )
+)
+
+REM Custom app launch stuff
+if "!Launch_APP2!"=="1" (
+        if exist "!APP2_path!" (
+            start "" "!APP2_path!"
+            echo !APP2! [92mStarted![0m
+        ) else (
+            echo !APP2! Was [33mNot[0m Found!
+        )
+)
+
+REM Custom app launch stuff
+if "!Launch_APP3!"=="1" (
+        if exist "!APP3_path!" (
+            start "" "!APP3_path!"
+            echo !APP3! [92mStarted![0m
+        ) else (
+            echo !APP3! Was [33mNot[0m Found!
+        )
+)
+
+REM Custom app launch stuff
+if "!Launch_APP4!"=="1" (
+        if exist "!APP4_path!" (
+            start "" "!APP4_path!"
+            echo !APP4! [92mStarted![0m
+        ) else (
+            echo !APP4! Was [33mNot[0m Found!
+        )
+)
+
+REM Custom app launch stuff
+if "!Launch_APP5!"=="1" (
+        if exist "!APP5_path!" (
+            start "" "!APP5_path!"
+            echo !APP5! [92mStarted![0m
+        ) else (
+            echo !APP5! Was [33mNot[0m Found!
+        )
+)
+
+REM Custom app launch stuff
+if "!Launch_APP6!"=="1" (
+        if exist "!APP6_path!" (
+            start "" "!APP6_path!"
+            echo !APP6! [92mStarted![0m
+        ) else (
+            echo !APP6! Was [33mNot[0m Found!
+        )
+)
+
+REM Custom app launch stuff
+if "!Launch_APP7!"=="1" (
+        if exist "!APP7_path!" (
+            start "" "!APP7_path!"
+            echo !APP7! [92mStarted![0m
+        ) else (
+            echo !APP7! Was [33mNot[0m Found!
+        )
+)
+
+REM Custom app launch stuff
+if "!Launch_APP7!"=="1" (
+        if exist "!APP7_path!" (
+            start "" "!APP7_path!"
+            echo !APP7! [92mStarted![0m
+        ) else (
+            echo !APP7! Was [33mNot[0m Found!
+        )
+)
+
+REM Custom app launch stuff
+if "!Launch_APP8!"=="1" (
+        if exist "!APP8_path!" (
+            start "" "!APP8_path!"
+            echo !APP8! [92mStarted![0m
+        ) else (
+            echo !APP8! Was [33mNot[0m Found!
+        )
+)
+
+REM Custom app launch stuff
+if "!Launch_APP9!"=="1" (
+        if exist "!APP9_path!" (
+            start "" "!APP9_path!"
+            echo !APP9! [92mStarted![0m
+        ) else (
+            echo !APP9! Was [33mNot[0m Found!
+        )
+)
+
 echo.
 echo.
 
-REM Starts gnirehtet, the program responsible for the reverse tether.
-gnirehtet.exe start > NUL
+REM Installs gnirehtet.apk
+if %Enable_RT%==1 (
+ gnirehtet.exe start > nul
+)
 
 REM Checks if High priority is set to true or false and responds accordingly.
 if "%High_Prioriority%"=="1" start /MIN "" "High Priority.CMD" && echo Launching In [4;33mHigh[0m Priority!
@@ -285,15 +386,46 @@ if %Enable_Sound%==1 (
  start "" "cmdmp3win.exe" "STM\start.mp3"
 )
 
+if not defined Launch_Steam_Link_Client set "Launch_Steam_Link_Client=0"
+
+REM Launches steam link on the headset
+:: Couldn't get it running properly due to steam link complaining about not being on local network, to enable paste "Launch_Steam_Link_Client=true" in conf.
+if %Launch_Steam_Link_Client%==1 (
+ start "" adb.exe shell monkey -p com.valvesoftware.steamlinkvr -c android.intent.category.LAUNCHER 1 
+)
+
+REM Launches the Virtual Desktop client on the headset.
+if %Launch_VD_Client%==1 (
+    start "" adb.exe shell monkey -p VirtualDesktop.Android -c android.intent.category.LAUNCHER 1
+)
+
+REM Toggles Windows's Internet Connection Sharing feature intended for streaming over ethernet instead of ADB.
+if %Enable_ICS%==1 (
+   powershell -Command "Start-Process -FilePath '%CD%\ICS START.cmd' -WorkingDirectory '%CD%' -Verb RunAs" && echo [4;92mICS Started Successfully!![0m && timeout /t 4 >nul && exit
+)
+
 echo [4;92mRT Started Successfully!![0m
 
-@java -jar gnirehtet.jar relay > NUL 2>&1
+REM Starts the reverse tether.
+if %Enable_RT%==1 (
+ @java -jar gnirehtet.jar relay > nul 2>&1
+)
+
+REM Displays message if both RT and ICS are OFF, then exits.
+if "%Enable_RT%"=="0" (
+    if "%Enable_ICS%"=="0" (
+        start "" "cmdmp3win.exe" "STM\start.mp3"
+        echo [4;43;30mRT And ICS are OFF, Launching Selected Apps ONLY!![0m
+        timeout /T 4 /nobreak && exit
+    ))
 
 echo [1;97;41mAnother Instance of RT-RP Is Already Running!!![0m
 
-@pause >NUL
+pause
 
-:: START.cmd Copyright 2025 by KUIJEN is licensed under GNU General Public Licence Version 3.0 https://www.gnu.org/licenses/gpl-3.0.txt
+endlocal
+
+:: START.cmd Copyright 2025/2026 by KUIJEN is licensed under GNU General Public Licence Version 3.0 https://www.gnu.org/licenses/gpl-3.0.txt
 
 ::                          *@@@@@@@@@@#######@@@@@@@@@@                          
 ::                     %@@@@@                          ,@@@@@(                    
