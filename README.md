@@ -22,7 +22,7 @@ Launces:
   <li>Vive Hub</li>
   <li>VRCX</li>
 </ul>
-along with custom entries alongside Gnirehtet for reverse tethering to an android based VR headset in order to use wifi only applications such as Virtual Desktop with a USB cable.
+In addition to custom entries alongside Gnirehtet for reverse tethering to an android based VR headset in order to use wifi only applications such as Virtual Desktop with a USB cable.
 
 <h1><strong>Usage:</strong></h1>
 
