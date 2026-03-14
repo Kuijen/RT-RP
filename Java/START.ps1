@@ -271,6 +271,27 @@ while ($restart) {
         }
     }
 
+
+    # ---- VD network check ----
+    if ($gniOk -and (G 'Enable_RT')) {
+        $rndisLine = & $adb shell ip addr show rndis0 2>&1 | Where-Object { $_ -match 'inet ' }
+        Log "rndis0: $rndisLine"
+        if ($rndisLine -match 'inet\s+(\d+\.\d+\.\d+)\.\d+') {
+            $headsetSubnet = $matches[1]
+            $pcSubnets = Get-NetIPAddress -AddressFamily IPv4 |
+                         Where-Object { $_.IPAddress -notmatch '^127\.' } |
+                         ForEach-Object { $_.IPAddress -replace '\.\d+$', '' }
+            Log "VD subnet check - headset: $headsetSubnet.x  PC: $($pcSubnets -join ', ').x"
+            if ($pcSubnets -contains $headsetSubnet) {
+                Log "VD network OK: subnet match ($headsetSubnet.x)"
+            } else {
+                LWrn "Virtual Desktop: subnet mismatch (headset $headsetSubnet.x vs PC). Bitrate may be capped to ~60 Mbps."
+            }
+        } else {
+            Log "VD network check: rndis0 not found on headset"
+        }
+    }
+
     # ---- Gnirehtet failure handling ----
     if ((G 'Enable_RT') -and -not $gniOk) {
         Log "gnirehtet failed. ADB devices: $(& $adb devices 2>&1 | Out-String)"
