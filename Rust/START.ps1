@@ -8,13 +8,10 @@ $host.UI.RawUI.WindowTitle = 'RT-RP V2.6.0'
 $scriptDir  = Split-Path -Parent $MyInvocation.MyCommand.Path
 $cfgBk      = Join-Path $scriptDir "Text Files\Backup Config.txt"
 $configPath = "$env:USERPROFILE\Documents\RT-RP Config.ini"
-$logDir     = "$env:APPDATA\rtrp"
-$logFile    = "$logDir\debug.log"
+$logFile    = "$env:USERPROFILE\Documents\RT-RP debug.log"
 $adb        = Join-Path $scriptDir "adb.exe"
 $gni        = Join-Path $scriptDir "gnirehtet-g7.exe"
 $mp3        = Join-Path $scriptDir "cmdmp3win.exe"
-
-if (-not (Test-Path $logDir)) { New-Item -ItemType Directory -Path $logDir | Out-Null }
 
 # ---- Log / display helpers ----
 function Log  { param($m) Add-Content $logFile "[DBG] $(Get-Date -f HH:mm:ss) $m" }
