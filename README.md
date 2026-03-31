@@ -38,7 +38,7 @@ In addition to custom entries alongside Gnirehtet for reverse tethering to an an
 
 6. You can change which apps are allowed to launch by changing true to false and vice versa in "RT-RP Config.ini" inside your Documents folder, you can also change their install directories in the same file.
 
-7. Using HEVC/HEVC 10-Bit and possibly AV1 is recommended for Virtual Desktop to avoid stutters.
+7. Using HEVC/HEVC 10-Bit and possibly AV1 is recommended for Virtual Desktop to avoid stutters due to the higher bitrates that H.264+ can be set to.
 
 8. Disabling unneeded launch options does speed up the script ever so slightly. 
 
