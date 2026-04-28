@@ -36,7 +36,7 @@ In addition to custom entries alongside Gnirehtet for reverse tethering to an an
 
 5. if you see "'java' is not recognized as an internal or external command," comes up it usually means that the Java Runtime got borked. In that case a reinstall would probably fix it, alternatively you can use the runtime installer inside RT-RP's install directory.
 
-6. You can change which apps are allowed to launch by changing true to false and vice versa in "RT-RP Config.ini" inside your Documents folder (<strong>_make sure to have launched RT-RP at leat once!_</strong>), you can also change their install directories in the same file.
+6. You can change which apps are allowed to launch by changing true to false and vice versa in "RT-RP Config.ini" inside your Documents folder (<strong>_make sure to have launched RT-RP at least once!_</strong>), you can also change their install directories in the same file.
 
 7. Using HEVC/HEVC 10-Bit and possibly AV1 is recommended for Virtual Desktop to avoid stutters due to the higher bitrates that H.264+ can be set to.
 
