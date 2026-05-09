@@ -14,7 +14,7 @@
 Name "Reverse Tethering RePack"
 
 ; The file to write
-OutFile "C:\Users\$PROFILE\Desktop\RT-RP Installer (Rust).exe"
+OutFile "$DESKTOP\RT-RP Installer (Rust).exe"
 
 ; Request application privileges for Windows Vista and higher
 RequestExecutionLevel admin
@@ -23,11 +23,14 @@ RequestExecutionLevel admin
 Unicode True
 
 ; The default installation directory
-InstallDir $PROGRAMFILES\RTRP
+InstallDir $PROGRAMFILES64\RTRP
 
 ; Registry key to check for directory (so if you install again, it will 
 ; overwrite the old one automatically)
 InstallDirRegKey HKLM "Software\RTRP" "Install_Dir"
+
+; Path to the folder containing files to pack - relative to this script
+!define SRCDIR "Source"
 
 ;--------------------------------
 
@@ -52,7 +55,7 @@ Section "Core Files (required)"
   
   ; Put file there
   
-  File /r "C:\Users\KUIJEN\Desktop\Source\"
+  File /r "${SRCDIR}\"
   
   ; Write the installation path into the registry
   WriteRegStr HKLM SOFTWARE\RTRP "Install_Dir" "$INSTDIR"
@@ -115,13 +118,12 @@ Function .onInstSuccess
     IfFileExists "$INSTDIR\Text Files\README.txt" openReadMe
     
 
-    ; Delete regardless of whether readme exists or not
+    ; Delete legacy config filename if present
     Delete "$DOCUMENTS\RT-RP Config.txt"
     Return
 
 openReadMe:
     ExecShell "open" "$INSTDIR\Text Files\README.txt"
     Delete "$DOCUMENTS\RT-RP Config.txt"
-    Delete "$DOCUMENTS\RT-RP Config.ini"
     Return
 FunctionEnd
