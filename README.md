@@ -1,6 +1,6 @@
 # RT-RP
 A wrapper made for [Gnirehtet](https://github.com/Genymobile/gnirehtet) to streamline usage for Android based VR headsets <br>
-(Everything comes bundled inside of the RT-RP insaller)
+(Everything comes bundled inside of the RT-RP installer)
 
 <strong>Notice</strong><br>
 Dev mode on Quest is currently bugged, disable and re-enable dev mode if you experience sudden disconnects.
